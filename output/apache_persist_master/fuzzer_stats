@@ -1,0 +1,27 @@
+start_time        : 1500419959
+last_update       : 1500419973
+fuzzer_pid        : 14687
+cycles_done       : 0
+execs_done        : 147
+execs_per_sec     : 10.31
+paths_total       : 4
+paths_favored     : 1
+paths_found       : 0
+paths_imported    : 0
+max_depth         : 1
+cur_path          : 0
+pending_favs      : 1
+pending_total     : 4
+variable_paths    : 4
+stability         : 99.90%
+bitmap_cvg        : 4.76%
+unique_crashes    : 0
+unique_hangs      : 0
+last_path         : 0
+last_crash        : 0
+last_hang         : 0
+execs_since_crash : 147
+exec_timeout      : 2000
+afl_banner        : apache_persist_master
+afl_version       : 2.47b
+command_line      : afl-fuzz -i input -o output -x httpd_afl.wordlist -m none -t 2000 -M apache_persist_master -- ./targets/apache/afl_persist/bin/httpd -X

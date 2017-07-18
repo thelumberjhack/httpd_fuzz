@@ -7,3 +7,6 @@ afl-fuzz -i input -o output -x httpd.wordlist -m none -t 2000 -S apache_s03 -- .
 afl-fuzz -i input -o output -x httpd.wordlist -m none -t 2000 -S apache_s04 -- ./targets/apache/afl/bin/httpd -X -F @@
 
 # etc.
+
+# Persistent
+afl-fuzz -i input -o output -x httpd_afl.wordlist -m none -t 2000 -M apache_persist_master -- ./targets/apache/afl_persist/bin/httpd -X
